@@ -58,6 +58,21 @@
             <version>1.4.8</version>
         </dependency>
         
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>angular-ui-router</artifactId>
+            <version>0.2.15</version>
+        </dependency>
+
+        
+        <!-- Babel dependency -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>babel</artifactId>
+            <version>6.3.26-1</version>
+        </dependency>
+            
+        
         <!-- logback classic dependency -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
