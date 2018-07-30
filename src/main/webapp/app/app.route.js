@@ -2,22 +2,24 @@
  * app.route.js
  */
 
-var app = angular.module('appRouter', ['ui.router']);
+(function(){
 
-/**
- * Routers
- */
-app.config(function($stateProvider, $urlRouterProvider){
-   
-    $stateProvider
-    
-        .state('home', {
-            url: '/home',
-            templateUrl: './app/home/home.html'
-        })
-        .state('about', {
-            url: '/about',
-            templateUrl: './app/about/about.html'
-        });
-    
-});
+    var app = angular.module('appRouter', ['ui.router']);
+
+    app.config(function ($stateProvider, $urlRouterProvider) {
+
+        $stateProvider
+
+                .state('home', {
+                    url: '/home',
+                    templateUrl: './app/home/home.html'
+                })
+                .state('about', {
+                    url: '/about',
+                    templateUrl: './app/about/about.html'
+                });
+
+    });
+
+})();
+

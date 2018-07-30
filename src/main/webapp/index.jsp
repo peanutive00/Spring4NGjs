@@ -27,6 +27,7 @@
         <!-- Angular -->
         <script type="text/javascript" src="<c:url value='app/app.module.js'/>"></script>
         <script type="text/javascript" src="<c:url value='app/app.route.js'/>"></script>
-
+        <script type="text/javascript" src="<c:url value='app/component/home/home.js'/>"></script>
+        <script type="text/javascript" src="<c:url value='app/component/about/about.js'/>"></script>
     </body>
 </html>
