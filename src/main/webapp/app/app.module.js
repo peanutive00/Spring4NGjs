@@ -4,7 +4,7 @@
 
 (function(){
     
-    var app = angular.module("app", ['appRouter']);
+    var app = angular.module("app", ['appRouter', 'ngMaterial']);
     
 })();
     
