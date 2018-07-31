@@ -27,18 +27,10 @@
 
     <body>
         <div ng-app="app" ng-cloak>
-
-            <!-- nav bar -->
+            
             <div>
                 <h2 class="md-toolbar-tools">Spring 4 & Angular JS</h2>
-                <md-menu-bar>
-                    <md-menu>
-                        <button ui-sref="home">Home</button>
-                    </md-menu>
-                    <md-menu>
-                        <button ui-sref="about">About</button>
-                    </md-menu>
-                </md-menu-bar>
+                <menu></menu>
             </div>
 
             <md-content class="page-container" ui-view></md-content>
@@ -48,6 +40,7 @@
         <!-- Angular -->
         <script type="text/javascript" src="<c:url value='app/app.module.js'/>"></script>
         <script type="text/javascript" src="<c:url value='app/app.route.js'/>"></script>
+        <script type="text/javascript" src="<c:url value='app/directive/menu/menu.directive.js'/>"</script>
         <script type="text/javascript" src="<c:url value='app/component/home/home.js'/>"></script>
         <script type="text/javascript" src="<c:url value='app/component/about/about.js'/>"></script>
         
