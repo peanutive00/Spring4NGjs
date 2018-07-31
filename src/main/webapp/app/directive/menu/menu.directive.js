@@ -7,23 +7,28 @@
     angular.module('navBarDirective', []).directive('menu', function () {
         return {
             restrict: "E",
-            templateUrl: "app/directive/menu/menu.html",
-            scope: '=menuItem',
+            templateUrl: "app/directive/menu/menu.directive.html",
+            scope: '=menuItems',
             controller: ['$scope',
                 function ($scope) {
-                    $scope.menuItem = [
+                    $scope.menuItems = [
                         {
                             header: "Home",
                             context: "home",
-                            subMenu: []
+                            subMenuItems: []
                         },
                         {
                             header: "About",
                             context: "about",
-                            subMenu: []
+                            subMenuItems: [
+                                {
+                                    header: "About Author",
+                                    context: "" 
+                                }
+                            ]
                         }
                     ];
-                    console.log($scope.menuItem);
+                    console.log($scope.menuItems);
                 }
             ]
         };

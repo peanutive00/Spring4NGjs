@@ -12,11 +12,11 @@
 
                 .state('home', {
                     url: '/home',
-                    templateUrl: './app/home/home.html'
+                    templateUrl: 'app/component/home/home.html'
                 })
                 .state('about', {
                     url: '/about',
-                    templateUrl: './app/about/about.html'
+                    templateUrl: 'app/component/about/about.html'
                 });
 
     });
