@@ -14,24 +14,28 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
         <style>
-            
+
             .page-container {
                 margin: 0 auto;
                 padding: 12px;
                 max-width: 80%; 
             }
-            
+
         </style>
 
     </head>
 
     <body>
         <div ng-app="app" ng-cloak>
-            
-            <div>
-                <h2 class="md-toolbar-tools">Spring 4 & Angular JS</h2>
-                <menu></menu>
-            </div>
+
+            <md-toolbar class="md-menu-toolbar">
+                <div layout="row">
+                    <div>
+                        <h2 class="md-toolbar-tools">Spring 4 & Angular JS</h2>
+                        <menu></menu>
+                    </div>
+                </div>
+            </md-toolbar>
 
             <md-content class="page-container" ui-view></md-content>
 
@@ -43,6 +47,6 @@
         <script type="text/javascript" src="<c:url value='app/directive/menu/menu.directive.js'/>"></script>
         <script type="text/javascript" src="<c:url value='app/component/home/home.js'/>"></script>
         <script type="text/javascript" src="<c:url value='app/component/about/about.js'/>"></script>
-        
+
     </body>
 </html>

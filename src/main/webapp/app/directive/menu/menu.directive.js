@@ -8,29 +8,33 @@
         return {
             restrict: "E",
             templateUrl: "app/directive/menu/menu.directive.html",
-            scope: '=menuItems',
-            controller: ['$scope',
-                function ($scope) {
-                    $scope.menuItems = [
-                        {
-                            header: "Home",
-                            context: "home",
-                            subMenuItems: []
-                        },
-                        {
-                            header: "About",
-                            context: "about",
-                            subMenuItems: [
-                                {
-                                    header: "About Author",
-                                    context: "" 
-                                }
-                            ]
-                        }
-                    ];
-                    console.log($scope.menuItems);
-                }
-            ]
+            controller: function ($scope) {
+
+                $scope.menuItems = [
+                    {
+                        header: "Home",
+                        context: "home",
+                        subMenuItems: null
+                    },
+                    {
+                        header: "About",
+                        context: "about",
+                        subMenuItems: [
+                            {
+                                header: "About Author",
+                                context: ""
+                            }
+                        ]
+                    }
+                ];
+                
+                $scope.showDropDown = function(value){
+                    if(value.subMenuItems !== null)
+                        return $mdOpenMenu();
+                };
+                
+            }
+
         };
     });
 
