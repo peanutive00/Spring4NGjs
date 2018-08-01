@@ -1,11 +1,11 @@
 <md-menu-bar>
     <md-menu ng-repeat="menuItem in menuItems">
-        <button ng-click="showDropDown(menuItem)" ui-sref="{{menuItem.context}}">
+        <button ng-click="$mdOpenMenu()" ui-sref="{{menuItem.context}}">
             {{menuItem.header}}
         </button>
         
-        <md-menu-content width="4">
-            <md-menu-item ng-repeat="subMenuItem in menuItem.subMenuItems">
+        <md-menu-content ng-show="menuItem.subMenuItems !== null" width="4">
+            <md-menu-item  ng-repeat="subMenuItem in menuItem.subMenuItems">
                 <md-menu>
                     <md-button>{{subMenuItem.header}}</md-button>
                 </md-menu>

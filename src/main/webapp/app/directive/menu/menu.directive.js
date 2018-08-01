@@ -28,11 +28,6 @@
                     }
                 ];
                 
-                $scope.showDropDown = function(value){
-                    if(value.subMenuItems !== null)
-                        return $mdOpenMenu();
-                };
-                
             }
 
         };
