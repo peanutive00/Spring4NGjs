@@ -7,10 +7,9 @@
         <md-menu-content ng-show="menuItem.subMenuItems !== null" width="4">
             <md-menu-item  ng-repeat="subMenuItem in menuItem.subMenuItems">
                 <md-menu>
-                    <md-button>{{subMenuItem.header}}</md-button>
+                    <md-button ui-sref="{{subMenuItem.context}}">{{subMenuItem.header}}</md-button>
                 </md-menu>
             </md-menu-item>
         </md-menu-content>
     </md-menu>
 </md-menu-bar>
-

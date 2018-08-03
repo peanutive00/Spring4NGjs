@@ -18,11 +18,11 @@
                     },
                     {
                         header: "About",
-                        context: "about",
+                        context: "#",
                         subMenuItems: [
                             {
                                 header: "About Author",
-                                context: ""
+                                context: "about"
                             }
                         ]
                     }
